@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="ApiTesting">
+    <classes>
+       <class name="Testcases.GetAllUsers"/>
+       <class name="Testcases.GetSingleUser"/>
+       <class name="Testcases.GetAllResources"/>
+       <class name="Testcases.GetSingleResource"/>
+       <class name="Testcases.GetInvalidUser"/>
+       <class name="Testcases.GetInvalidResource"/>
+       <!-- Suite <class name="Testcases.GetUsersList"/> -->
+       <class name="Testcases.GetDelayedResponse"/>
+       <class name="Testcases.PostUser"/>
+       <class name="Testcases.PostRegisterUser"/>
+       <class name="Testcases.PostLoginUser"/>
+       <class name="Testcases.PostUnsuccessfulRegister"/>
+       <class name="Testcases.PostUnsuccessfulLogin"/>
+       <class name="Testcases.PatchUser"/>
+       <class name="Testcases.DeleteUser"/>
+		<class name="Testcases.DeleteInvalidUser"/>
+		<class name="Testcases.PostUnameCorrectPswrdIncorrectLogin"/>
+		<class name="Testcases.PostUnameIncorrectPswrdCorrectLogin"/>
+		<class name="Testcases.PostUnameIncorrectPswrdIncorrectLogin"/>
+		<class name="Testcases.PostIncorrectEmailRegister"/>
+		<class name="Testcases.PostIncorrectEmailMissingPasswordRegister"/>
+		<class name="Testcases.PatchUpdatingInvalidUser"/>
+		<class name="Testcases.PatchUpdateUserName"/>
+
+
+       <class name="Testcases.PutUser"/>
+    </classes>
+  </test> <!-- TestSample -->
+
+</suite> <!-- Suite -->
+
+

@@ -1,0 +1,194 @@
+<html>
+<head>
+<title>TestNG:  ApiTesting</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>ApiTesting</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>23/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Sep 19 16:35:39 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>38 seconds (38370 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Testcases.GetAllUsers.f()'><b>f</b><br>Test class: Testcases.GetAllUsers</td>
+<td></td>
+<td>1</td>
+<td>Testcases.GetAllUsers@4b741d6d</td></tr>
+<tr>
+<td title='Testcases.GetSingleUser.f()'><b>f</b><br>Test class: Testcases.GetSingleUser</td>
+<td></td>
+<td>4</td>
+<td>Testcases.GetSingleUser@2eae8e6e</td></tr>
+<tr>
+<td title='Testcases.GetAllResources.f()'><b>f</b><br>Test class: Testcases.GetAllResources</td>
+<td></td>
+<td>0</td>
+<td>Testcases.GetAllResources@8f2ef19</td></tr>
+<tr>
+<td title='Testcases.GetSingleResource.f()'><b>f</b><br>Test class: Testcases.GetSingleResource</td>
+<td></td>
+<td>0</td>
+<td>Testcases.GetSingleResource@470734c3</td></tr>
+<tr>
+<td title='Testcases.GetInvalidUser.f()'><b>f</b><br>Test class: Testcases.GetInvalidUser</td>
+<td></td>
+<td>0</td>
+<td>Testcases.GetInvalidUser@2cf3d63b</td></tr>
+<tr>
+<td title='Testcases.GetInvalidResource.f()'><b>f</b><br>Test class: Testcases.GetInvalidResource</td>
+<td></td>
+<td>1</td>
+<td>Testcases.GetInvalidResource@7674f035</td></tr>
+<tr>
+<td title='Testcases.GetDelayedResponse.f()'><b>f</b><br>Test class: Testcases.GetDelayedResponse</td>
+<td></td>
+<td>3</td>
+<td>Testcases.GetDelayedResponse@69e153c5</td></tr>
+<tr>
+<td title='Testcases.PostUser.f()'><b>f</b><br>Test class: Testcases.PostUser</td>
+<td></td>
+<td>1</td>
+<td>Testcases.PostUser@173ed316</td></tr>
+<tr>
+<td title='Testcases.PostRegisterUser.f()'><b>f</b><br>Test class: Testcases.PostRegisterUser</td>
+<td></td>
+<td>1</td>
+<td>Testcases.PostRegisterUser@25ce9dc4</td></tr>
+<tr>
+<td title='Testcases.PostLoginUser.f()'><b>f</b><br>Test class: Testcases.PostLoginUser</td>
+<td></td>
+<td>1</td>
+<td>Testcases.PostLoginUser@74ea2410</td></tr>
+<tr>
+<td title='Testcases.PostUnsuccessfulRegister.f()'><b>f</b><br>Test class: Testcases.PostUnsuccessfulRegister</td>
+<td></td>
+<td>0</td>
+<td>Testcases.PostUnsuccessfulRegister@17f62e33</td></tr>
+<tr>
+<td title='Testcases.PostUnsuccessfulLogin.f()'><b>f</b><br>Test class: Testcases.PostUnsuccessfulLogin</td>
+<td></td>
+<td>5</td>
+<td>Testcases.PostUnsuccessfulLogin@76b1e9b8</td></tr>
+<tr>
+<td title='Testcases.PatchUser.f()'><b>f</b><br>Test class: Testcases.PatchUser</td>
+<td></td>
+<td>1</td>
+<td>Testcases.PatchUser@27406a17</td></tr>
+<tr>
+<td title='Testcases.DeleteUser.f()'><b>f</b><br>Test class: Testcases.DeleteUser</td>
+<td></td>
+<td>0</td>
+<td>Testcases.DeleteUser@2af004b</td></tr>
+<tr>
+<td title='Testcases.DeleteInvalidUser.f()'><b>f</b><br>Test class: Testcases.DeleteInvalidUser</td>
+<td></td>
+<td>0</td>
+<td>Testcases.DeleteInvalidUser@248e319b</td></tr>
+<tr>
+<td title='Testcases.PostUnameCorrectPswrdIncorrectLogin.f()'><b>f</b><br>Test class: Testcases.PostUnameCorrectPswrdIncorrectLogin</td>
+<td></td>
+<td>1</td>
+<td>Testcases.PostUnameCorrectPswrdIncorrectLogin@5d0bf09b</td></tr>
+<tr>
+<td title='Testcases.PostUnameIncorrectPswrdCorrectLogin.f()'><b>f</b><br>Test class: Testcases.PostUnameIncorrectPswrdCorrectLogin</td>
+<td></td>
+<td>0</td>
+<td>Testcases.PostUnameIncorrectPswrdCorrectLogin@793f29ff</td></tr>
+<tr>
+<td title='Testcases.PostUnameIncorrectPswrdIncorrectLogin.f()'><b>f</b><br>Test class: Testcases.PostUnameIncorrectPswrdIncorrectLogin</td>
+<td></td>
+<td>1</td>
+<td>Testcases.PostUnameIncorrectPswrdIncorrectLogin@3e8c3cb</td></tr>
+<tr>
+<td title='Testcases.PostIncorrectEmailRegister.f()'><b>f</b><br>Test class: Testcases.PostIncorrectEmailRegister</td>
+<td></td>
+<td>1</td>
+<td>Testcases.PostIncorrectEmailRegister@563f38c4</td></tr>
+<tr>
+<td title='Testcases.PostIncorrectEmailMissingPasswordRegister.f()'><b>f</b><br>Test class: Testcases.PostIncorrectEmailMissingPasswordRegister</td>
+<td></td>
+<td>1</td>
+<td>Testcases.PostIncorrectEmailMissingPasswordRegister@543295b0</td></tr>
+<tr>
+<td title='Testcases.PatchUpdatingInvalidUser.f()'><b>f</b><br>Test class: Testcases.PatchUpdatingInvalidUser</td>
+<td></td>
+<td>3</td>
+<td>Testcases.PatchUpdatingInvalidUser@54422e18</td></tr>
+<tr>
+<td title='Testcases.PatchUpdateUserName.f()'><b>f</b><br>Test class: Testcases.PatchUpdateUserName</td>
+<td></td>
+<td>1</td>
+<td>Testcases.PatchUpdateUserName@117159c0</td></tr>
+<tr>
+<td title='Testcases.PutUser.f()'><b>f</b><br>Test class: Testcases.PutUser</td>
+<td></td>
+<td>2</td>
+<td>Testcases.PutUser@3e27ba32</td></tr>
+</table><p>
+</body>
+</html>
